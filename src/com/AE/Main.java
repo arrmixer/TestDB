@@ -32,31 +32,10 @@ public class Main {
             ")");
 
             insertContact(statement, "Tim", 6545678, "tim@email.com");
-            insertContact(statement, "Tim", 6545678, "tim@email.com");
-            insertContact(statement, "Tim", 6545678, "tim@email.com");
-            insertContact(statement, "Tim", 6545678, "tim@email.com");
+            insertContact(statement, "Jane", 4829484, "jane@email.com");
+            insertContact(statement, "Joe", 45632, "joe@email.com");
+            insertContact(statement, "Fido", 9038, "dog@email.com");
 
-            statement.execute("INSERT INTO " + TABLE_CONTACTS +
-                    " (" +
-                    COLUMN_NAME + ", " +
-                    COLUMN_PHONE + ", " +
-                    COLUMN_EMAIL +
-                    " )" +
-                    "VALUES('Joe', 45632, 'joe@email.com')");
-            statement.execute("INSERT INTO " + TABLE_CONTACTS +
-                    " (" +
-                    COLUMN_NAME + ", " +
-                    COLUMN_PHONE + ", " +
-                    COLUMN_EMAIL +
-                    " )" +
-                    "VALUES('Jane', 4829484, 'jane@email.com')");
-            statement.execute("INSERT INTO " + TABLE_CONTACTS +
-                    " (" +
-                    COLUMN_NAME + ", " +
-                    COLUMN_PHONE + ", " +
-                    COLUMN_EMAIL +
-                    " )" +
-                    "VALUES('Fido', 9038, 'dog@email.com')");
 
             statement.execute("UPDATE " + TABLE_CONTACTS + " SET " +
                     COLUMN_PHONE + "=5566789" +
